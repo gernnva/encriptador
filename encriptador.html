@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador ONE</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo.png" alt="Logo Alura">
+        </header>
+
+        <main>
+
+            <section class="seccion1">
+                
+                <div class="mensajeInformativo">
+                    <img src="img/muneco.png" alt="imagen mirando un diamante">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                
+                <textarea name="" id="resultadoText" cols="30" rows="10" class="hidden"></textarea>
+                <button id="btnCopiar" class="copiar" onclick="btnCopiar()">
+                    Copiar
+                </button>
+
+            </section>
+    
+            <section class="seccion2">  
+                <input type="text" id="input" placeholder="Ingrese aqui su texto" required>
+                <p>ⓘSolo letras minusculas y sin acento</p>
+                <div>
+                    <button type="submit" class="encriptar" onclick="btnEncriptar()">
+                        Encriptar
+                    </button>
+                    <button type="submit" class="desencriptar" onclick="btnDesencriptar()">
+                        Desencriptar
+                    </button>
+                </div>
+            </section>
+
+        </main>
+        
+
+    <script src="script.js"></script>    
+    </body>
+</html>
